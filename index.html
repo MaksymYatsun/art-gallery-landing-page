@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="libs/swiper-bundle.min.js" defer></script>
+  <script src="libs/simplebar.min.js" defer></script>
+  <script src="libs/choices.min.js" defer></script>
+  <script src="libs/accordion.min.js" defer></script>
+  <script src="libs/just-validate.min.js" defer></script>
+  <script src="libs/inputmask.min.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" defer></script>
+  <script src="js/events-swiper.js" defer></script>
+  <script src="js/projects-swiper.js"></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/choice.js" defer></script>
+  <script src="js/gallery-swiper.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/events-swiper.js" defer></script>
+  <script src="js/projects-swiper.js" defer></script>
+  <script src="js/burger.js" defer></script>
+  <script src="js/bg.js" defer></script>
+  <script src="js/dropdown.js" defer></script>
+  <script src="js/accordion.js" defer></script>
+  <script src="js/maps.js" defer></script>
+  <script src="js/validation.js" defer></script>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/choices.min.css" rel="stylesheet">
+  <link href="css/simplebar.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <link href="img/favicon.svg" rel="shortcut icon" type="image/x-icon">
+  <title>Blanchard</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container header__container flex">
+        <button class="btn-reset burger">
+          <span></span>
+        </button>
+        <a class="header__logo flex">
+          <img class="header__logo-img" src="img/svg/blanchard.svg" alt="Blanchard logo">
+        </a>
+        <nav class="header__nav flex">
+          <div class="menu-wrap flex">
+            <ul class="menu flex">
+              <li class="menu__item">
+                <a class="header__link" href="#about-us">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#gallery">Gallery</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#catalog">Catalogue</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#events">Events</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#projects">Projects</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link" href="#contacts">Contacts</a>
+              </li>
+              <li class="menu__item">
+                <a class="login flex" href="#">
+                  <svg class="login__icon" width="13" height="13" viewBox="0 0 13 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z">
+                    </path>
+                  </svg>
+                  <span class="login__link-text">Sign In</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="form-container">
+          <button class="form-container__open btn-reset">
+            <svg class="form-container__open-icon" width="25" height="25" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="9.15446" height="2.28862"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                fill="white"></path>
+            </svg>
+          </button>
+          <form class="form" action="/">
+            <button class="form-container__submit btn-reset">
+              <svg width="24" height="24" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="9.15446" height="2.28862"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                  fill="white"></path>
+              </svg>
+            </button>
+            <input class="form__input input-reset" type="text">
+            <button class="form-close btn-reset" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)"
+                  fill="#CACACA"></rect>
+                <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30469 15.5524)"
+                  fill="#CACACA"></rect>
+                <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2"></circle>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom categories">
+      <div class="container categories__container flex">
+        <ul class="categories__list reset-list">
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="one">
+              <span class="categories__item-heading">Realism</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="one">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--tintoretto" href="#">Tinnoretto
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--leonardo" href="#">Leonardo</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--veroccio" href="#">Veroccio</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--veroccio" href="#">Veroccio</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--veroccio" href="#">Veroccio</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="two">
+              <span class="categories__item-heading">Impressionism</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="two">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--monet" href="#">Monet</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--sisley" href="#">Sislay</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--manet" href="#">Manet</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--renoir" href="#">Renoir</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="three">
+              <span class="categories__item-heading">Postimpressionism</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="three">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--van-gogh" href="#">Van Gogue</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--sesan" href="#">Sesan</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--goghen" href="#">Gogen</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--siora" href="#">Сёра</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="four">
+              <span class="categories__item-heading">Avangard</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="four">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--kandinskiy" href="#">Kandinskiy</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--marinetti" href="#">Marinetti</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--malevych" href="#">Malevych</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--picasso" href="#">Piccasso</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="categories__item">
+            <button class="categories__item-btn js-header-dropdown-btn" data-path="five">
+              <span class="categories__item-heading">Futurism</span>
+              <span class="categories__item-icon"></span>
+            </button>
+            <div class="categories__dropdown js-header-drop" data-target="five">
+              <div class="categories__dropdown-wrap" data-simplebar>
+                <ul class="categories__drop-list reset-list">
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--karra" href="#">Carra</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--pratella" href="#">Prattela</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--severini" href="#">Severini</a>
+                  </li>
+                  <li class="categories__dropdown-item">
+                    <a class="categories__item-link categories__item-link--balla" href="#">Balla</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <form class="search-bottom" action="/">
+          <button class="search-bottom__form btn-reset" tabindex="-1">
+            <svg width="24" height="24" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+              tabindex="-1">
+              <rect width="9.15446" height="2.28862"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"></rect>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                fill="white"></path>
+            </svg>
+          </button>
+          <input class="search-bottom__input input-reset" type="text" placeholder="Search">
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content flex">
+          <h1 class="main__title">Blanchard</h1>
+          <h2 class="hero__title">Touch the beauty</h2>
+          <p class="hero__descr">We are forced to start from the fact that the implementation of the planned
+            assignments
+            creates the prerequisites for new proposals</p>
+          <a class="hero__link" href="#">Subscribe to newsletter</a>
+        </div>
+      </div>
+      <div class="slider-wrapper">
+        <div class="js-hero-swiper swiper-container slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide slide-1 hero-slide-1"></div>
+            <div class="swiper-slide slide slide-2 hero-slide-2"></div>
+            <div class="swiper-slide slide slide-3 hero-slide-3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us" id="about-us">
+      <div class="container about-us__container">
+        <h2 class="section-title about-us__title">About Us</h2>
+        <p class="about-us__descr">The clarity of our position is obvious: a semantic analysis of external
+          counteractions
+          uniquely identifies each participant as capable of making their own decisions regarding
+          distribution of internal reserves and resources. However, one should not forget that high-quality
+          the prototype of the future project entails the process of implementation and modernization of the development
+          model.
+          Everyday practice shows that the high quality of positional research creates
+          the need to include a number of extraordinary events in the production plan, taking into account
+          a complex for the distribution of internal reserves and resources. Within the specification of modern
+          standards, the actions of opposition representatives are gaining popularity among certain layers
+          population, and therefore must be exposed.</p>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="container gallery__container">
+        <div class="content-wrap">
+          <div class="gallery-left-elem">
+            <h2 class="gallery__title section-title">Gallery</h2>
+            <div class="gallery-select">
+              <form class="gallery-select__form flex">
+                <label class="gallery-select__label">Filter:</label>
+                <select class="choice">
+                  <option value="painting">Painting</option>
+                  <option value="drawing">Drawing</option>
+                  <option value="sculpture">Sculpture</option>
+                </select>
+              </form>
+            </div>
+            <form class="gallery-filters flex">
+              <label class="gallery-filters__content filter" for="1800-1899">19c.
+                <input class="filter__item filter__item--default" id="1800-1899" name="time" type="radio"
+                  value="1800-1899" tabindex="0">
+                <span class="filter__item filter__item--custom"></span>
+              </label>
+              <label class="gallery-filters__content filter" for="1900-1999">20c.
+                <input class="filter__item filter__item--default" id="1900-1999" name="time" type="radio"
+                  value="1900-1999" tabindex="0" checked>
+                <span class="filter__item filter__item--custom"></span>
+              </label>
+              <label class="gallery-filters__content filter" for="2000-nowadays">Modern
+                <input class="filter__item filter__item--default" id="2000-nowadays" name="time" type="radio"
+                  value="2000-nowadays" tabindex="0">
+                <span class="filter__item filter__item--custom"></span>
+              </label>
+            </form>
+          </div>
+          <div class="gallery-swiper">
+            <div class="gallery-navigation">
+              <button class="nav-btn gallery-prev" aria-label="К предыдущему слайду"></button>
+              <div class="gallery-pagination"></div>
+              <button class="nav-btn gallery-next" aria-label="К следующему слайду"></button>
+            </div>
+            <div class="swiper-container slides-container">
+              <div class="swiper-wrapper gallery-swiper-wrapper">
+                <a class="swiper-slide gallery-slide" data-modal-target="#torso">
+                  <picture>
+                    <source srcset="img/gallery/xs/gallery__carousel__img__xs__1.jpg" media="(max-width: 320px)">
+                    <source srcset="img/gallery/md/gallery__carousel__img__md__1.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/xl/gallery__carousel__img__xl__1.jpg" media="(max-width: 1024px)">
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__1.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide" data-modal-target="#wooman">
+                  <picture>
+                    <source srcset="img/gallery/xs/gallery__carousel__img__xs__2.jpg" media="(max-width: 320px)">
+                    <source srcset="img/gallery/md/gallery__carousel__img__md__2.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/xl/gallery__carousel__img__xl__2.jpg" media="(max-width: 1024px)">
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__2.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide" data-modal-target="#harvest">
+                  <picture>
+                    <source srcset="img/gallery/xs/gallery__carousel__img__xs__3.jpg" media="(max-width: 320px)">
+                    <source srcset="img/gallery/md/gallery__carousel__img__md__3.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/xl/gallery__carousel__img__xl__3.jpg" media="(max-width: 1024px)">
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__3.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide">
+                  <picture>
+                    <source srcset="img/gallery/xs/gallery__carousel__img__xs__4.jpg" media="(max-width: 320px)">
+                    <source srcset="img/gallery/md/gallery__carousel__img__md__4.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/xl/gallery__carousel__img__xl__4.jpg" media="(max-width: 1024px)">
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__4.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide">
+                  <picture>
+                    <source srcset="img/gallery/xs/gallery__carousel__img__xs__5.jpg" media="(max-width: 320px)">
+                    <source srcset="img/gallery/md/gallery__carousel__img__md__5.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/xl/gallery__carousel__img__xl__5.jpg" media="(max-width: 1024px)">
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__5.jpg" alt>
+                  </picture>
+                </a>
+                <a class="swiper-slide gallery-slide">
+                  <picture>
+                    <source srcset="img/gallery/xs/gallery__carousel__img__xs__6.jpg" media="(max-width: 320px)">
+                    <source srcset="img/gallery/md/gallery__carousel__img__md__6.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/xl/gallery__carousel__img__xl__6.jpg" media="(max-width: 1024px)">
+                    <img class="gallery-image" src="img/gallery/xxl/gallery__carousel__img__xxl__6.jpg" alt>
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal flex" id="torso">
+        <div class="modal-wrapper flex">
+          <picture>
+            <source srcset="img/gallery/gallery-modal/xs/modal-xs-1.jpg" media="(max-width: 620px)">
+            <source srcset="img/gallery/gallery-modal/md/modal-md-1.jpg" media="(max-width: 768px)">
+            <source srcset="img/gallery/gallery-modal/xl/modal-xl-1.jpg" media="(max-width: 1368px)">
+            <img class="modal-img" src="img/gallery/gallery-modal/xxl/modal-xxl-1.jpg" alt>
+          </picture>
+          <div class="modal-content flex">
+            <button class="modal-close btn-reset" data-close-button>&times;</button>
+            <h4 class="modal-title">Kazimir Malevich</h4>
+            <h5 class="modal-painting">«Torso»</h5>
+            <span class="modal-time">1929</span>
+            <p class="modal-descr">The work 'Torso' was created in 1929 by the artist Kazimir Malevich in the style of
+              'Neo-Suprematism'.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal flex" id="wooman">
+        <div class="modal-wrapper flex">
+          <picture>
+            <source srcset="img/gallery/gallery-modal/xs/modal-xs-2.jpg" media="(max-width: 620px)">
+            <source srcset="img/gallery/gallery-modal/md/modal-md-2.jpg" media="(max-width: 768px)">
+            <source srcset="img/gallery/gallery-modal/xl/modal-xl-2.jpg" media="(max-width: 1368px)">
+            <img class="modal-img" src="img/gallery/gallery-modal/xxl/modal-xxl-2.jpg" alt>
+          </picture>
+          <div class="modal-content flex">
+            <button class="modal-close btn-reset" data-close-button>&times;</button>
+            <h4 class="modal-title">Kazimir Malevich</h4>
+            <h5 class="modal-painting">"Woman with a Rake"</h5>
+            <span class="modal-time">1931–1932</span>
+            <p class="modal-descr">Painting from the second series of the peasant cycle of works by Kazimir Malevich.
+              Artist
+              started
+              for its creation in 1930-1931, after the first cycle was lost after the Berlin
+              and Warsaw
+              exhibitions in 1927.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal flex" id="harvest">
+        <div class="modal-wrapper flex">
+          <picture>
+            <source srcset="img/gallery/gallery-modal/xs/modal-xs-3.jpg" media="(max-width: 620px)">
+            <source srcset="img/gallery/gallery-modal/md/modal-md-3.jpg" media="(max-width: 768px)">
+            <source srcset="img/gallery/gallery-modal/xl/modal-xl-3.jpg" media="(max-width: 1368px)">
+            <img class="modal-img" src="img/gallery/gallery-modal/xxl/modal-xxl-3.jpg" alt>
+          </picture>
+          <div class="modal-content flex">
+            <button class="modal-close btn-reset" data-close-button>&times;</button>
+            <h4 class="modal-title">Kazimir Malevich</h4>
+            <h5 class="modal-painting">Lorem ipsum</h5>
+            <span class="modal-time">1911</span>
+            <p class="modal-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ipsam sunt maxime,
+              unde
+              sequi explicabo consequuntur odit adipisci facere in sit, facilis necessitatibus est deserunt officiis
+              voluptas voluptatum assumenda distinctio?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="section-title catalog__title">Catalogue</h2>
+        <p class="section-descr catalog__descr">Shareholders of the largest companies, which are a prime example
+          continental European type of political culture, will be declared violating universal norms
+          ethics and morals. Being just part of the big picture, seeking to supplant traditional production,
+          nanotechnology to this day remains the lot of liberals who yearn to be functionally separated
+          into independent elements.p>
+        <div class="catalog__wrap js-tabs-wrap">
+          <div class="catalog__content-wrap">
+            <div class="catalog__painter-info active js-tab-content" data-target="domenico">
+              <picture>
+                <source srcset="img/catalogue/catalogue__xs.jpg" media="(max-width: 320px)">
+                <source srcset="img/catalogue/catalogue__md.jpg" media="(max-width: 768px)">
+                <source srcset="img/catalogue/catalogue__xl.jpg" media="(max-width: 1024px)">
+                <img class="catalog__painer-img" src="img/catalogue/catalogue__xxl.jpg" alt>
+              </picture>
+              <h3 class="catalog__painer-name">Domenico Ghirlandaio</h3>
+              <span class="catalog__painter-lifespan">June 2, 1448–January 11, 1494</span>
+              <p>One of the leading Florentine artists of Quattrocento, founder of an artistic dynasty that
+                continued by his brother David and son Ridolfo. Head of the art workshop where young Michelangelo
+                mastered professional skills within a year. Author of fresco cycles, in which convex,
+                the home life of biblical characters is shown with all sorts of details (their roles are
+                noble citizens of Florence in costumes of that time).</p>
+            </div>
+            <div class="catalog__painter-info js-tab-content" data-target="empty">
+              <picture>
+                <img class="catalog__painer-img" src="img/catalogue/catalogue__empty/empty__cover__xxl.jpg" alt>
+              </picture>
+              <h3>What do we know about him?</h3>
+              <p>So far, nothing... But we know for sure that there is something to see in the gallery!</p>
+              <a class="empty-gallery-btn" href="#gallery">To gallery</a>
+            </div>
+          </div>
+          <ul class="catalog__accordion accordion reset-list js-accordion-container">
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">From 1400 to 1499</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap">
+                  <ul class="accordion__inner-list reset-list">
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Benedetto di Bindo</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Bergognone, Ambrogio</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Bissolo, Francesco</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Boltraffio, Giovanni</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Bonsignori, Francesco</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Botticini, Raffaello</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Bramantino</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Brea, Ludovico</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="domenico" onclick="scrollToTarget()">
+                        <span class="link__text">Biagio d'Antonio Tucci</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Vecchietta</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Andrea Verrocchio</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn  active" href="#"
+                        data-path="domenico" onclick="scrollToTarget()">
+                        <span class="link__text">Domenico Ghirlandaio</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Benozzo Gozzoli</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Granacci, Francesco</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Gregorio di Cecco</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Giovanni da Udine</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="domenico" onclick="scrollToTarget()">
+                        <span class="link__text">Giovanni di Paolo</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="domenico" onclick="scrollToTarget()">
+                        <span class="link__text">Giorgione</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Parentino, Bernardo</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Pesellino</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Pietro Perugino</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Peruzzi, Baldassare</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Pisanello</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Pinturicchio</span>
+                      </a>
+                    </li>
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" href="#"
+                        data-path="empty" onclick="scrollToTarget()">
+                        <span class="link__text">Gregorio di Cecco</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">From 1500 to 1599</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg class="empty-cover" width="274" height="178" viewBox="0 0 274 178" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac flex">
+                    <h3 class="empty-ac__title">It's empty here</h3>
+                    <p class="empty-ac__descr">And in the gallery you can always find something interesting for yourself
+                    </p>
+                    <a class="empty-gallery-btn" href="#gallery">To gallery</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">From 1600 to 1699</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg class="empty-cover" width="274" height="178" viewBox="0 0 274 178" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac flex">
+                    <h3 class="empty-ac__title">It's empty here</h3>
+                    <p class="empty-ac__descr">And in the gallery you can always find something interesting for yourself
+                    </p>
+                    <a class="empty-gallery-btn" href="#gallery">To gallery</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">From 1600 to 1699</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg class="empty-cover" width="274" height="178" viewBox="0 0 274 178" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac flex">
+                    <h3 class="empty-ac__title">It's empty here</h3>
+                    <p class="empty-ac__descr">And in the gallery you can always find something interesting for yourself
+                    </p>
+                    <a class="empty-gallery-btn" href="#gallery">To gallery</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">From 1600 to 1699</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg class="empty-cover" width="274" height="178" viewBox="0 0 274 178" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac flex">
+                    <h3 class="empty-ac__title">It's empty here</h3>
+                    <p class="empty-ac__descr">And in the gallery you can always find something interesting for yourself
+                    </p>
+                    <a class="empty-gallery-btn" href="#gallery">To gallery</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">From 1600 to 1699</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg class="empty-cover" width="274" height="178" viewBox="0 0 274 178" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac flex">
+                    <h3 class="empty-ac__title">It's empty here</h3>
+                    <p class="empty-ac__descr">And in the gallery you can always find something interesting for yourself
+                    </p>
+                    <a class="empty-gallery-btn" href="#gallery">To gallery</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion__question ac">
+              <button class="accordion__heading ac-trigger">
+                <span class="accordion__heading-text">
+                  <span class="accordion__heading-text-wrap">From 1600 to 1699</span>
+                </span>
+                <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2"></path>
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black"></path>
+                </svg>
+              </button>
+              <div class="accordion__content ac-panel">
+                <div class="accordion__content-wrap accordion__content-wrap--empty">
+                  <svg class="empty-cover" width="274" height="178" viewBox="0 0 274 178" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.79346" y="1.8136" width="270.421" height="174.974" stroke="#999999" stroke-width="2">
+                    </rect>
+                    <rect x="12.6812" y="12.05" width="248.646" height="154.501" fill="#999999"></rect>
+                  </svg>
+                  <div class="empty-ac flex">
+                    <h3 class="empty-ac__title">It's empty here</h3>
+                    <p class="empty-ac__descr">And in the gallery you can always find something interesting for yourself
+                    </p>
+                    <a class="empty-gallery-btn" href="#gallery">To gallery</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="events" id="events">
+      <div class="container events__container">
+        <h2 class="section-title events__title">Events</h2>
+        <div class="swiper js-events-swiper flex">
+          <div class="swiper-wrapper js-events-swiper-wrapper">
+            <div class="swiper-slide slide-1 active flex">
+              <article class="events__article article flex">
+                <picture>
+                  <source srcset="img/events/xs/events__cover__xs__1.jpg" media="(max-width: 320px)">
+                  <source srcset="img/events/md/events__cover__md__1.jpg" media="(max-width: 768px)">
+                  <source srcset="img/events/xl/events__cover__xl__1.jpg" media="(max-width: 1024px)">
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__1.jpg" alt>
+                </picture>
+                <div class="article__content flex">
+                  <span class="article__location">
+                    Harvard Art Museum
+                  </span>
+                  <span class="article__time">
+                    from March 20 to April 30
+                  </span>
+                  <h3 class="article__title">Book engraving in live perception</h3>
+                  <p class="article__descr">One of the leading Florentine artists of Quattrocento, founder
+                    artistic dynasty, which was continued by his brother David and son Ridolfo</p>
+                  <a class="article__link" href="#">More</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide slide-2 flex">
+              <article class="events__article article flex">
+                <picture>
+                  <source srcset="img/events/xs/events__cover__xs__2.jpg" media="(max-width: 320px)">
+                  <source srcset="img/events/md/events__cover__md__2.jpg" media="(max-width: 768px)">
+                  <source srcset="img/events/xl/events__cover__xl__2.jpg" media="(max-width: 1024px)">
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__2.jpg" alt>
+                </picture>
+                <div class="article__content flex">
+                  <span class="article__location">
+                    ММОМА
+                  </span>
+                  <span class="article__time">
+                    24 марта 19:00
+                  </span>
+                  <h3 class="article__title">Exhibition "Formation 2020"</h3>
+                  <p class="article__descr">One of the leading Florentine artists of Quattrocento, founder
+                    artistic dynasty, which was continued by his brother David and son Ridolfo</p>
+                  <a class="article__link" href="#">More</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide slide-3 flex">
+              <article class="events__article article flex">
+                <picture>
+                  <source srcset="img/events/xs/events__cover__xs__3.jpg" media="(max-width: 320px)">
+                  <source srcset="img/events/md/events__cover__md__3.jpg" media="(max-width: 768px)">
+                  <source srcset="img/events/xl/events__cover__xl__3.jpg" media="(max-width: 1024px)">
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__3.jpg" alt>
+                </picture>
+                <div class="article__content flex">
+                  <span class="article__location">
+                    Еврейский музей
+                  </span>
+                  <span class="article__time">
+                    from March 31 to April 21
+                  </span>
+                  <h3 class="article__title">Exhibition "Formation 2020"</h3>
+                  <p class="article__descr">One of the leading Florentine artists of Quattrocento, founder
+                    artistic dynasty, which was continued by his brother David and son Ridolfo</p>
+                  <a class="article__link" href="#">More</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide slide-4 flex">
+              <article class="events__article article flex">
+                <picture>
+                  <source srcset="img/events/xs/events__cover__xs__4.jpg" media="(max-width: 320px)">
+                  <source srcset="img/events/md/events__cover__md__4.jpg" media="(max-width: 768px)">
+                  <source srcset="img/events/xl/events__cover__xl__4.jpg" media="(max-width: 1024px)">
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__4.jpg" alt>
+                </picture>
+                <div class="article__content flex">
+                  <span class="article__location">
+                    ММАМ
+                  </span>
+                  <span class="article__time">
+                    April 8 to May 20
+                  </span>
+                  <h3 class="article__title">Exhibition "Formation 2020"</h3>
+                  <p class="article__descr">One of the leading Florentine artists of Quattrocento, founder
+                    artistic dynasty, which was continued by his brother David and son Ridolfo</p>
+                  <a class="article__link" href="#">More</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide slide-5 flex">
+              <article class="events__article article flex">
+                <picture>
+                  <source srcset="img/events/xs/events__cover__xs__5.jpg" media="(max-width: 320px)">
+                  <source srcset="img/events/md/events__cover__md__5.jpg" media="(max-width: 768px)">
+                  <source srcset="img/events/xl/events__cover__xl__5.jpg" media="(max-width: 1024px)">
+                  <img class="article__cover" src="img/events/xxl/events__cover__xxl__5.jpg" alt>
+                </picture>
+                <div class="article__content flex">
+                  <span class="article__location">
+                    The Museum of Broadway
+                  </span>
+                  <span class="article__time">
+                    from March 30 to April 30
+                  </span>
+                  <h3 class="article__title">Exhibition "Formation 2020"</h3>
+                  <p class="article__descr">One of the leading Florentine artists of Quattrocento, founder
+                    artistic dynasty, which was continued by his brother David and son Ridolfo</p>
+                  <a class="article__link" href="#">More</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="events__navigation navigation">
+          <button class="events-prev btn-reset" tabindex="0">
+            <svg class="events-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
+                fill="#ECECEC" stroke="9D5CD0"></path>
+              <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
+            </svg>
+          </button>
+          <button class="events-next btn-reset" tabindex="0">
+            <svg class="events-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="test"
+                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+                fill="#ECECEC" stroke="9D5CD0"></path>
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container projects__container">
+        <h2 class="section-title projects__title">Projects</h2>
+        <p class="section-descr projects__descr">Preliminary Findings: Ongoing Outreach
+          ensuring our activities unequivocally fixes the need for the timely fulfillment of the most important task.
+          And also independent states are mixed with non-unique data to the degree of complete unrecognizability,
+          because of which it increases
+          their status of worthlessness. First of all, constant outreach
+          <button class="tooltip btn-reset"
+            data-tippy-content="Preliminary Findings: Ongoing Outreach
+            ensuring our activities unequivocally fixes the need for the timely fulfillment of the most important task."></button>
+          ensuring our activities unambiguously fixes the need for economic feasibility of the adopted
+          solutions.
+          And there is no doubt that the actions of opposition representatives can be considered
+          <button class="tooltip btn-reset" data-tippy-content="unambiguously"></button>
+          exclusively in the context
+          marketing and financial
+          <button class="tooltip btn-reset"
+            data-tippy-content="Preliminary Findings: Ongoing Outreach
+            ensuring our activities unequivocally fixes the need for the timely fulfillment of the most important task."></button>
+          prerequisites. Banal but irrefutable conclusions, as well as representatives of modern
+          social reserves call us to new achievements, which, in turn, must be mixed
+          with non-unique data to the degree of complete unrecognizability. More: <a class="projects__link-more"
+            href="#projects">blanchard-art.co/projects</a>
+        </p>
+        <h3 class="projects__subtitle">Project partners:</h3>
+        <div class="projects__swiper">
+          <div class="swiper js-projects-swiper">
+            <div class="swiper-wrapper js-projects-swiper__wrapper">
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/freelands__foundations.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/institute__of__art.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/workhouse.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/1849.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/hiscox.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/camden.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/stassen.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/watts__gallery.svg" alt>
+                </a>
+              </div>
+              <div class="swiper-slide projects-slide flex">
+                <a class="projects-link flex" href="#">
+                  <img class="projects-slide-img" src="img/svg/partners/ecole__superieure.svg" alt>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__navigation navigation">
+            <button class="projects-prev btn-reset">
+              <svg class="projects-prev__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25 7.09305e-06C11.1929 8.90364e-06 2.54046e-06 11.1929 4.35104e-06 25C6.16163e-06 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 5.28247e-06 25 7.09305e-06Z"
+                  fill="#ECECEC" stroke="9D5CD0"></path>
+                <path d="M26.6667 16.6667L18.3333 25L26.6667 33.3333" stroke="black"></path>
+              </svg>
+            </button>
+            <button class="projects-next btn-reset">
+              <svg class="projects-next__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="test"
+                  d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
+                  fill="#ECECEC" stroke="9D5CD0"></path>
+                <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__top flex">
+          <div class="contacts__adress">
+            <h4 class="contacts__subtitle">Showroom №4</h4>
+            <address class="adress">11 W 53rd St, New York</address>
+          </div>
+          <form class="contacts__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <div class="contacts__wrapper flex">
+              <input class="contacts__form-name name" placeholder="Name*" type="text" name="name">
+            </div>
+            <div class="contacts__wrapper flex">
+              <input class="contacts__form-phone tel" placeholder="Phone*" type="tel" name="tel">
+            </div>
+            <button class="contacts__form-call btn-reset" type="submit">Order <span class="hiden">back
+                call</span></button>
+          </form>
+          <div class="contacts__message">
+            <h4 class="contacts__message-subtitle">Contact in one click</h4>
+            <a class="contacts__message-link" href="#">
+              <img class="contacts__message-img" src="img/svg/whatsapp.svg" alt>
+            </a>
+            <a class="contacts__message-link" href="#">
+              <img class="contacts__message-img" src="img/svg/tellegram.svg" alt>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__bottom">
+        <div class="contacts__map">
+          <div class="contacts__map-wrap" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container flex">
+      <a class="footer__logo">
+        <img class="footer__logo-img" src="img/svg/blanchard.svg" alt="Blanchard logo">
+      </a>
+      <div class="footer__social">
+        <a class="social__icon" href="#">
+          <img class="contacts__message-img" src="img/svg/whatsapp.svg" alt>
+        </a>
+        <a class="social__icon" href="#">
+          <img class="contacts__message-img" src="img/svg/tellegram.svg" alt>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div class id="overlay"></div>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+  <script src="js/tippy.js" defer></script>
+</body>
+
+</html>
