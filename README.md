@@ -15,7 +15,7 @@
 
 ## Try it Out
 
-https://maksymyatsun.github.io/bilgi-teknolojilerind/
+https://maksymyatsun.github.io/art-gallery-landing-page
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
